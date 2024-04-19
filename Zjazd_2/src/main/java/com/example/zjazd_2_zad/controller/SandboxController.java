@@ -9,22 +9,26 @@ import org.springframework.web.bind.annotation.*;
 public class SandboxController {
 
     @GetMapping("/hello")
+    @ResponseBody
     public ResponseEntity<String> helloWorld(){
         return ResponseEntity.ok("Hello world");
     }
 
     @GetMapping("/model")
+    @ResponseBody
     public ResponseEntity<Car> printCar(){
         return ResponseEntity.ok(new Car("audi", "a2", "123"));
 
     }
 
     @GetMapping("/hello/{someValue}")
+    @ResponseBody
     public ResponseEntity<String> printValue(@PathVariable String someValue){
         return ResponseEntity.ok(someValue);
     }
 
     @GetMapping("/param")
+    @ResponseBody
     public ResponseEntity<String> printParam(@RequestParam String someValue1){
         return ResponseEntity.ok(someValue1);
     }

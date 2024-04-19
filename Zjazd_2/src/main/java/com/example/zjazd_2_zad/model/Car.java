@@ -1,5 +1,11 @@
 package com.example.zjazd_2_zad.model;
 
+import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Car {
     private String model;
     private String marka;
@@ -35,4 +41,9 @@ public class Car {
     public void setCena(String cena) {
         this.cena = cena;
     }
+
+
+
+
+
 }
