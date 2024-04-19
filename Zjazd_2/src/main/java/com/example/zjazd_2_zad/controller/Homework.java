@@ -12,7 +12,7 @@ import java.util.List;
 public class Homework {
 
 
-    Car car1 = new Car("sss", "aaa", "12");
+    Car car1 = new Car("impreza", "subaru", "121111");
 
 
     @GetMapping("/{someValue}")
