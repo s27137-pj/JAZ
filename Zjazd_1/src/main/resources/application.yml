@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: robmic
+  profiles:
+    default: false
+    active: true
+
+my:
+  custom:
+    property: Hello from application properties
