@@ -1,0 +1,18 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/movieservice
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  jpa:
+
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
